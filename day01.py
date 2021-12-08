@@ -1,12 +1,15 @@
 depth_list = open("input01").readlines()
 old = int(depth_list[0])
 inc = 0
+
+# Part 1
 for depth in depth_list:
     depth = int(depth)
     if depth > old:
         inc += 1
     old = depth
 
+# Part 2
 i = 0
 inc2 = 0
 def sum_measures(d, i):
